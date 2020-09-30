@@ -10,11 +10,11 @@ function computerPlay(){
     }
 }
 
-
+//user input
 function playerSelection(){
     return prompt('Select rock, paper or scissors: ').toLowerCase();
 }
-
+//one round play function that declares winner of the round
 function playRound(playerSelection, computerSelection){
     while (playerSelection === computerSelection){
         playerSelection = prompt('It\'s a draw, replay your turn: ').toLowerCase();
@@ -35,6 +35,8 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+//function that loops the playRound function 5 times and includes point based system and 
+//ends the game once someone reaches the most wins out of 5 rounds
 function game(){
     let playerScore = 0;
     let computerScore = 0;
