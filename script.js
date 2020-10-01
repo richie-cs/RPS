@@ -57,7 +57,3 @@ function game(){
 
 game();
 
-
-
-
-
