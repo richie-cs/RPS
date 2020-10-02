@@ -1,6 +1,7 @@
 # RockPaperScissors
 This is my rock, paper, scissors project
-play here : 
+<br>
+play here : https://richie-cs.github.io/RPS/
 
 # Problems
 I had to create an interactive game that allowed the user to select an option, compare that option to an automatically generated CPU option, determine a winner, and keep score
