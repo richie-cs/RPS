@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-
-    <h1>Rock, Paper, Scissors!</h1>
-    <h2>Play in the console. Type game() in the console to start the game!</h2>
-    <h3>have fun!</h3>
-
-    <div class="penguin">
-        <div class="penguin-bottom">
-          <div class="right-hand"></div>
-          <div class="left-hand"></div>
-          <div class="right-feet"></div>
-          <div class="left-feet"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+      <div id="app" class="app__container">
+        <div id="resultsContainer" class="app__results__container"></div>
+        <div class="app__players__container">
+          <div class="app__players__card">
+            <div class="app__card__name">You</div>
+          </div>
+          <div class="app__scores__container">
+            <div class="app__players__score">
+              <span id="playerScoreboard"></span> -
+              <span id="computerScoreboard"></span>
+            </div>
+          </div>
+          <div class="app__players__card">
+            <div class="app__card__name">Computer</div>
+          </div>
         </div>
-        <div class="penguin-top">
-          <div class="right-cheek"></div>
-          <div class="left-cheek"></div>
-          <div class="belly"></div>
-          <div class="right-eye">
-            <div class="sparkle"></div>
+        <div class="app__choices__container">
+          <div class="app__choice__item">
+            <div data-value="rock" class="rock__button"></div>
+            Rock
           </div>
-          <div class="left-eye">
-            <div class="sparkle"></div>
+          <div class="app__choice__item">
+            <div data-value="paper" class="paper__button"></div>
+            Paper
           </div>
-          <div class="blush-right"></div>
-          <div class="blush-left"></div>
-          <div class="beak-top"></div>
-          <div class="beak-bottom"></div>
+          <div class="app__choice__item">
+            <div data-value="scissors" class="scissors__button"></div>
+            Scissors
+          </div>
         </div>
       </div>
-
-</body>
+    </main>
+    <footer>
+     Thank you for playing.
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
