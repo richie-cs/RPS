@@ -103,9 +103,5 @@ const game = (rounds) => {
   });
 };
 
-/**
- * Call of function game
- * You can change number of rounds here
- */
 game(5);
 
