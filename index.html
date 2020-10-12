@@ -3,53 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock, paper, scissors</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock paper and scissors</title>
   </head>
   <body>
-    <header>
-      <h1>Rock, Paper, Scissors</h1>
-    </header>
-    <main>
-      <div id="app" class="app__container">
-        <div id="resultsContainer" class="app__results__container"></div>
-        <div class="app__players__container">
-          <div class="app__players__card">
-            <div class="app__card__name">You</div>
-          </div>
-          <div class="app__scores__container">
-            <div class="app__players__score">
-              <span id="playerScoreboard"></span> -
-              <span id="computerScoreboard"></span>
-            </div>
-          </div>
-          <div class="app__players__card">
-            <div class="app__card__name">Computer</div>
-          </div>
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>0</p>
         </div>
-        <div class="app__choices__container">
-          <div class="app__choice__item">
-            <div data-value="rock" class="rock__button"></div>
-            Rock
-          </div>
-          <div class="app__choice__item">
-            <div data-value="paper" class="paper__button"></div>
-            Paper
-          </div>
-          <div class="app__choice__item">
-            <div data-value="scissors" class="scissors__button"></div>
-            Scissors
-          </div>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
         </div>
       </div>
-    </main>
-    <footer>
-     Thank you for playing.
-    </footer>
+
+      <div class="intro">
+        <h1>Rock Paper and Scissors</h1>
+        <button>Let's Play</button>
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img class="player-hand" src="./assets/rock.png" alt="" />
+          <img class="computer-hand" src="./assets/rock.png" alt="" />
+        </div>
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
